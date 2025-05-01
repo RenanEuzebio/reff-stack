@@ -1,6 +1,6 @@
-# Reff Stack (Multi-Node Edition with Komodo)
+# Reff Full-Stack
 
-This is my personal webdev stack.
+This is my personal WebDev stack.
 
 ---
 
@@ -44,8 +44,7 @@ Each static site frontend is hosted on its own [(Cloudflare Pages)](https://page
 
 - **Client Interactivity:** [Alpine.js](https://alpinejs.dev/)
 - **Server Interactivity (AJAX without JS):** [HTMX](https://htmx.org/)
-- **Styling:** [Pico CSS](https://picocss.com/)
-- **Icons:** [Lucide Icons](https://lucide.dev/)
+- **Styling:** [Pico CSS](https://picocss.com/) + [Lucide Icons](https://lucide.dev/)
 
 ---
 
