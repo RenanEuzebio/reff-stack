@@ -1,6 +1,6 @@
 # Reff Stack
 
-## 🖥️ Server (Hetzner VPS)
+## 🖥️ Server [(Hetzner VPS)](https://www.hetzner.com/cloud)
 
 Docker containers orchestrated using [Komodo](https://komo.do/).
 
@@ -13,7 +13,7 @@ Docker containers orchestrated using [Komodo](https://komo.do/).
 
 ---
 
-## 🌐 Client (Cloudflare Pages)
+## 🌐 Client [(Cloudflare Pages)](https://pages.cloudflare.com/)
 
 - **Client Interactivity:** [Alpine.js](https://alpinejs.dev/)
 - **Server Interactivity (AJAX without JS):** [HTMX](https://htmx.org/)
@@ -27,4 +27,4 @@ Docker containers orchestrated using [Komodo](https://komo.do/).
 - **Version Control:** [Gitea](https://gitea.io/)
 - **Static assets & DB backups storage:** [Cloudflare R2](https://www.cloudflare.com/products/r2/)
 
-Pocketbase DB backups are regularly synced to R2.
+*Pocketbase DB backups are regularly synced to R2.*
