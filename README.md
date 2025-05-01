@@ -28,3 +28,10 @@ Docker containers orchestrated using [Komodo](https://komo.do/).
 - **Static assets & DB backups storage:** [Cloudflare R2](https://www.cloudflare.com/products/r2/)
 
 *Pocketbase DB backups are regularly synced to R2.*
+
+## To add
+
+- Analytics;
+- Payment (Probabily Stripe);
+- Localization Manager.
+- How do I implement cookies?
