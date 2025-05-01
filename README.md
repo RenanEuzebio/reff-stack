@@ -1,21 +1,23 @@
-# Reff Stack
+# Reff Stack (Multi-Node Edition with Komodo)
 
 This is my personal webdev stack.
 
+---
+
 ## 🖥️ Main Server
 
-Hosted on its own [(Hetzner VPS)](https://www.hetzner.com/cloud).
+Hosted on its own [(Hetzner VPS)](https://www.hetzner.com/cloud) instance and contains an isolated development stack.
 
 ### 🧠 Central Control & Dev Hub
 
-- **🧭 Container Management:** [Portainer CE](https://www.portainer.io/)  
-  Centrally manages all site VPSs via Portainer Agents.
+- **🧭 Container Management:** [Komodo](https://github.com/mbecker20/komodo)  
+  - The **Komodo Core** is installed here and manages all remote VPSs via **Komodo Periphery agents**.
 
 - **🗃️ Version Control:** [Gitea](https://gitea.io/)  
-  Hosts all site repositories for development and staging.
+  Hosts all site repositories for development and staging. Used to manage both frontend and backend source code.
 
 - **📉 Analytics:** [Umami](https://umami.is/)  
-  Tracks multiple domains with privacy-first analytics.
+  Tracks multiple domains with privacy-first, cookie-free analytics.
 
 ---
 
@@ -30,8 +32,9 @@ Each site backend is hosted on its own [(Hetzner VPS)](https://www.hetzner.com/c
 - **Docker Container 2: Pocketbase**
   - Lightweight backend for DB and Auth: [Pocketbase](https://pocketbase.io/)
 
-- **Portainer Agent:**  
-  - Enables remote container management from the main server.
+- **Komodo Periphery Agent:**  
+  - Installed on each site VPS.
+  - Connects to the central Komodo Core to allow remote orchestration.
 
 ---
 
@@ -44,23 +47,19 @@ Each static site frontend is hosted on its own [(Cloudflare Pages)](https://page
 - **Styling:** [Pico CSS](https://picocss.com/)
 - **Icons:** [Lucide Icons](https://lucide.dev/)
 
-## 🔐 Optional: Internal Networking
-
-Use [Tailscale](https://tailscale.com/) or [WireGuard](https://www.wireguard.com/) for secure communication between servers and Portainer agents without exposing Docker ports to the public internet.
-
 ---
 
 ## 🔁 Development Workflow
 
 1. Developers push code to **Gitea** on the main server.
-2. Development builds and staging environments are optionally spun up via **Portainer** for testing.
+2. Development builds and staging environments can be spun up via **Komodo**.
 3. When ready:
-   - **Static frontend** is deployed to **Cloudflare Pages**.
-   - **Production containers** are redeployed on the appropriate **Site VPS** using Portainer.
+   - The **static frontend** is deployed to **Cloudflare Pages**.
+   - The **production containers** are redeployed on the appropriate **Site VPS** via Komodo.
 
+---
 
 ## To do
 
 - Payment (Probably Stripe)  
 - Localization Manager  
-- Determine if the whole setup GDPR compliant without using cookies?
