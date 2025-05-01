@@ -8,8 +8,12 @@ Docker containers orchestrated using [Komodo](https://komo.do/).
 - Framework: [Litestar](https://litestar.dev/)
 - Dependency & environment management: [UV](https://github.com/astral-sh/uv)
 
-### 📦 Docker Container 2: Pocketbase
-- Lightweight backend for DB and Auth: [Pocketbase](https://pocketbase.io/)
+### 📦 Docker Container 2: Pocketbase  
+Lightweight backend for DB and Auth: [Pocketbase](https://pocketbase.io/)
+
+### 📉 Docker Container 3: Umami  
+Self-hosted web analytics: [Umami](https://umami.is/)  
+Tracks visits, pages, and events without using cookies or compromising user privacy.
 
 ---
 
@@ -29,9 +33,10 @@ Docker containers orchestrated using [Komodo](https://komo.do/).
 
 *Pocketbase DB backups are regularly synced to R2.*
 
-## To add
+---
 
-- Analytics;
-- Payment (Probabily Stripe);
-- Localization Manager.
-- How do I implement cookies?
+## To do
+
+- Payment (Probably Stripe)  
+- Localization Manager  
+- Determine if the whole setup GDPR compliant without using cookies?
