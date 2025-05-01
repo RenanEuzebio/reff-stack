@@ -8,7 +8,7 @@ This is my personal WebDev stack.
 
 Hosted on its own [(Hetzner VPS)](https://www.hetzner.com/cloud) instance and contains an isolated development stack. The main server works as a Central Control & Dev Hub for all sites.
 
-- **🧭 Container Management:** [Komodo](https://github.com/mbecker20/komodo)  
+- **🧭 Container Management:** [Komodo](https://komo.do/)  
   The **Komodo Core** is installed here and manages all remote VPSs via **Komodo Periphery agents**.
 
 - **🗃️ Version Control:** [Gitea](https://gitea.io/)  
