@@ -1,34 +1,30 @@
-# Reff Stack Overview
+# Reff Stack
 
-This stack is built with a focus on simplicity, performance, and modern tooling.
+## 🖥️ Server (Hetzner VPS)
 
----
+Docker containers orchestrated using [Komodo](https://komo.do/).
 
-## Backend (Hetzner CX11 VPS)
+### 🐍 Docker Container 1: Python API
+- Framework: [Litestar](https://litestar.dev/)
+- Dependency & environment management: [UV](https://github.com/astral-sh/uv)
 
-### Container 1: PocketBase
-- SQLite database
-- User authentication
-- Realtime API
-- File uploads
-- DB backup to Cloudflare R2
-
-### Container 2: Litestar API
-- Python backend logic
-- Exposes endpoints for HTMX interactions
+### 📦 Docker Container 2: Pocketbase
+- Lightweight backend for DB and Auth: [Pocketbase](https://pocketbase.io/)
 
 ---
 
-## Frontend (Cloudflare Pages)
+## 🌐 Client (Cloudflare Pages)
 
-- **HTMX** — dynamic HTML interactions via `GET`/`POST`
-- **Pico CSS** — minimal, classless styling
-- **Lucide Icons** — modern, lightweight SVG icons
+- **Client Interactivity:** [Alpine.js](https://alpinejs.dev/)
+- **Server Interactivity (AJAX without JS):** [HTMX](https://htmx.org/)
+- **Styling:** [Pico CSS](https://picocss.com/)
+- **Icons:** [Lucide Icons](https://lucide.dev/)
 
 ---
 
-## Storage
+## 🧾 Versioning and Backups
 
-- **Cloudflare R2**
-  - User-uploaded files (via PocketBase)
-  - Periodic backups of the PocketBase database
+- **Version Control:** [Gitea](https://gitea.io/)
+- **Static assets & DB backups storage:** [Cloudflare R2](https://www.cloudflare.com/products/r2/)
+
+Pocketbase DB backups are regularly synced to R2.
