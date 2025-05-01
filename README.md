@@ -2,7 +2,9 @@
 
 This is my personal webdev stack.
 
-## 🖥️ Main Server [(Hetzner VPS)](https://www.hetzner.com/cloud)
+## 🖥️ Main Server
+
+Hosted on its own [(Hetzner VPS)](https://www.hetzner.com/cloud).
 
 ### 🧠 Central Control & Dev Hub
 
@@ -17,9 +19,9 @@ This is my personal webdev stack.
 
 ---
 
-## 🏗️ Site Backend (VPS 2, VPS 3, ...)
+## 🏗️ Site Backend
 
-Each site backend is hosted on its own [(Hetzner VPS)](https://www.hetzner.com/cloud) instance and contains an isolated production stack.
+Each site backend is hosted on its own [(Hetzner VPS)](https://www.hetzner.com/cloud) instance and contains an isolated production stack. DB backups are sent to [Cloudflare R2](https://www.cloudflare.com/products/r2/).
 
 - **Docker Container 1: Python API**
   - Framework: [Litestar](https://litestar.dev/)
@@ -33,7 +35,7 @@ Each site backend is hosted on its own [(Hetzner VPS)](https://www.hetzner.com/c
 
 ---
 
-## 🌐 Site Frontend (VPS 2, VPS 3, ...)
+## 🌐 Site Frontend
 
 Each static site frontend is hosted on its own [(Cloudflare Pages)](https://pages.cloudflare.com/) instance after passing development checks on the main server.
 
@@ -41,15 +43,6 @@ Each static site frontend is hosted on its own [(Cloudflare Pages)](https://page
 - **Server Interactivity (AJAX without JS):** [HTMX](https://htmx.org/)
 - **Styling:** [Pico CSS](https://picocss.com/)
 - **Icons:** [Lucide Icons](https://lucide.dev/)
-
----
-
-## 🧾 Versioning and Backups
-
-- **Version Control:** [Gitea](https://gitea.io/) on the main server.
-- **Static assets & DB backups:** [Cloudflare R2](https://www.cloudflare.com/products/r2/)
-
----
 
 ## 🔐 Optional: Internal Networking
 
