@@ -12,8 +12,7 @@ Docker containers orchestrated using [Komodo](https://komo.do/).
 Lightweight backend for DB and Auth: [Pocketbase](https://pocketbase.io/)
 
 ### 📉 Docker Container 3: Umami  
-Self-hosted web analytics: [Umami](https://umami.is/)  
-Tracks visits, pages, and events without using cookies or compromising user privacy.
+Self-hosted web analytics (no cookies): [Umami](https://umami.is/)  
 
 ---
 
