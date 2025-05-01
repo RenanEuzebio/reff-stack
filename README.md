@@ -40,7 +40,7 @@ Each site backend is hosted on its own [(Hetzner VPS)](https://www.hetzner.com/c
 
 ## 🌐 Site Frontend
 
-Each static site frontend is hosted on its own [(Cloudflare Pages)](https://pages.cloudflare.com/) instance after passing development checks on the main server.
+Each site frontend is hosted on its own [(Cloudflare Pages)](https://pages.cloudflare.com/) instance after passing development checks on the main server.
 
 - **Client Interactivity:** [Alpine.js](https://alpinejs.dev/)
 - **Server Interactivity (AJAX without JS):** [HTMX](https://htmx.org/)
