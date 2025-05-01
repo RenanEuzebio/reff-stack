@@ -49,8 +49,6 @@ Each static site frontend is hosted on its own [(Cloudflare Pages)](https://page
 - **Version Control:** [Gitea](https://gitea.io/) on the main server.
 - **Static assets & DB backups:** [Cloudflare R2](https://www.cloudflare.com/products/r2/)
 
-*Pocketbase DB backups from each site VPS are regularly synced to R2.*
-
 ---
 
 ## 🔐 Optional: Internal Networking
